@@ -1,0 +1,103 @@
+body{
+	overflow: hidden;
+}
+.box-intro h1{
+	color: #1b1464;
+}
+.box-words-wrapper{
+	color: #1b1464;
+}
+.large-header{
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}
+#features{
+	background-color: #0652dd;
+}
+.feature-icons{
+	color: #fff !important;
+}
+.feature-item h6, .feature-item p{
+	color:#fff !important;
+}
+.process-numbers-light{
+	color: #eee;
+}
+.process-numbers-dark{
+	color: #0652dd;
+}
+.section-dark h2{
+	color: #1b1464;
+}
+.section-white h2{
+	color: #fff;
+}
+.text-white{
+	color: #fff !important;
+}
+#clients{
+	display: block;
+	background-color: #0652dd;
+	overflow: hidden !important;
+}
+.main-footer{
+	background-color: #1b1464 !important;
+}
+.member-thumb:hover .overlay {
+	cursor: default !important;
+}
+.member-role{
+	color: #333 !important;
+}
+.box-header{
+	z-index: 999;
+}
+.box-primary-nav{
+	background: rgba(27, 20, 100, 0.96);
+	z-index: 900;
+}
+#services p{
+	color: #fff;
+}
+.default-btn:after{
+	background-color: #0652dd;
+}
+@media only screen and (max-width : 992px){
+	.feature-item div{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+/* Preloader */
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	/* change if the mask should have another color then white */
+	z-index: 999999;
+	/* makes sure it stays on top */
+}
+
+#status {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	/* centers the loading animation horizontally one the screen */
+	top: 50%;
+	/* centers the loading animation vertically one the screen */
+	background-image: url(../img/status.gif);
+	/* path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px;
+	/* is width and height divided by two */
+}
