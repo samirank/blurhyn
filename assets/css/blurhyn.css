@@ -104,15 +104,18 @@ body{
 @media (max-width: 768px) {
 	.lead{
 		font-size: 16px;
-		/*text-align: left;*/
+		font-family: 'Merriweather', serif;
 		padding: 20px;
 	}
 }
 .about h2{
 	text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: -145px;
-    margin-bottom: 100px;
+	letter-spacing: 5px;
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: -145px;
+	margin-bottom: 100px;
+}
+.lead{
+	line-height: 2;
 }
