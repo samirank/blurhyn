@@ -107,6 +107,29 @@ body{
 		font-family: 'Merriweather', serif;
 		padding: 20px;
 	}
+	.box-header{
+		position: fixed;
+		top: 0px;
+	}
+	.box-logo {
+		padding: 20px;
+	}
+	.box-header.is-fixed-xs {
+		position: fixed;
+		height: 60px;
+		background-color: rgba(255, 255, 255, 0.96);
+		-webkit-transition: -webkit-all 0.5s ease;
+		transition: -webkit-all 0.5s ease;
+		transition: all 0.5s ease;
+		transition: all 0.5s ease, -webkit-all 0.5s ease;
+	}
+	.box-header.is-fixed-xs>.box-logo{
+		padding: 10px 20px;
+	}
+	.box-header.is-visible-xs {
+		-webkit-transform: unset;
+		transform: unset;
+	}
 }
 .about h2{
 	text-transform: uppercase;

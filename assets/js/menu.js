@@ -28,6 +28,35 @@ jQuery(document).ready(function($){
 		});
 	}
 
+
+
+		if($(window).width() < 768) {
+		var headerHeight = $('.box-header').height();
+		$(window).on('scroll',
+		{
+	        previousTop: 0
+	    }, 
+	    function () {
+		    var currentTop = $(window).scrollTop();
+		    //check if user is scrolling up
+		    if (currentTop < this.previousTop ) {
+		    	//if scrolling up...
+		    	if (currentTop > 0 && $('.box-header').hasClass('is-fixed-xs')) {
+		    		$('.box-header').addClass('is-visible-xs');
+		    	} else {
+		    		$('.box-header').removeClass('is-visible-xs is-fixed-xs');
+		    	}
+		    } else {
+		    	//if scrolling down...
+		    	$('.box-header').removeClass('is-visible-xs');
+		    	if( currentTop > headerHeight && !$('.box-header').hasClass('is-fixed-xs')) $('.box-header').addClass('is-fixed-xs');
+		    }
+		    this.previousTop = currentTop;
+		});
+	}
+
+
+
 	//open/close primary navigation
 	$('.box-primary-nav-trigger').on('click', function(){
 		$('.box-menu-icon').toggleClass('is-clicked'); 
