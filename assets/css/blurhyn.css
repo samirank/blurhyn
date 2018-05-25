@@ -145,3 +145,10 @@ body{
 .lead{
 	line-height: 2;
 }
+.site-hero_2 {
+    background-image: linear-gradient( #ffffffe6, #ffffffe6 ), url(../img/site-hero2.jpg);
+}
+.site-hero_2 h2 {
+    color: #1b1464;
+    font-weight: bold;
+}
