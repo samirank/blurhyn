@@ -103,8 +103,8 @@ body{
 }
 @media (max-width: 768px) {
 	.lead{
-		font-size: 16px;
-		font-family: 'Merriweather', serif;
+		font-size: 14px;
+		/*font-family: 'Merriweather', serif;*/
 		padding: 20px;
 	}
 	.box-header{
@@ -129,6 +129,9 @@ body{
 	.box-header.is-visible-xs {
 		-webkit-transform: unset;
 		transform: unset;
+	}
+	.copyright-section p{
+		padding: 0px 15px;
 	}
 }
 .about h2{
