@@ -133,6 +133,11 @@ body{
 	.copyright-section p{
 		padding: 0px 15px;
 	}
+	.box-intro{
+		margin-left: -15px;
+		margin-right: -15px;
+		width: 110%;
+	}
 }
 .about h2{
 	text-transform: uppercase;
