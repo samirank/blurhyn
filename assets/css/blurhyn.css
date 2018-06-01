@@ -152,6 +152,13 @@ body{
 	color: #1b1464;
 	font-weight: bold;
 }
+.site-hero-contact {
+	background-image: linear-gradient( #ffffffe6, #ffffffe6 ), url(../img/site-hero-contact.jpg);
+}
+.site-hero-contact h2 {
+	color: #1b1464;
+	font-weight: bold;
+}
 ul.slides h5{
 	color: #eee;
 }
