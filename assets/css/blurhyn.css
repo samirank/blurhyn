@@ -173,3 +173,6 @@ ul.slides p{
 .flex-direction-nav a:before{
 	color: #fff !important;
 }
+#owl-demo .item img {
+    max-height: 122px;
+}
