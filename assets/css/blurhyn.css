@@ -179,3 +179,15 @@ ul.slides p{
 .logo-footer {
     width: 150px;
 }
+footer p {
+    color: #fff;
+}
+.contact-widget ul.social-icons li a i {
+	color: #fff
+}
+.copyright-section {
+    border-top: 1px solid #ccc;
+}
+.owl-theme .owl-controls .owl-page span {
+    border: 1px solid #0652dd;
+}
