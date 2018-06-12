@@ -291,6 +291,7 @@ section{
 }
 .mbr-parallax-background, .mbr-background {
     background-attachment: fixed !important;
+    background-color: #162a82;
     background-position: 50% 0;
     background-repeat: no-repeat;
     background-size: cover !important;
