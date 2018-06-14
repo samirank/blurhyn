@@ -72,35 +72,7 @@ body{
 	}
 }
 
-/* Preloader */
 
-#preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #fff;
-	/* change if the mask should have another color then white */
-	z-index: 999999;
-	/* makes sure it stays on top */
-}
-
-#status {
-	width: 200px;
-	height: 200px;
-	position: absolute;
-	left: 50%;
-	/* centers the loading animation horizontally one the screen */
-	top: 50%;
-	/* centers the loading animation vertically one the screen */
-	background-image: url(../img/status.gif);
-	/* path to your loading animation */
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: -100px 0 0 -100px;
-	/* is width and height divided by two */
-}
 @media (max-width: 768px) {
 	.lead{
 		font-size: 14px;
@@ -190,4 +162,40 @@ footer p {
 }
 .owl-theme .owl-controls .owl-page span {
     border: 1px solid #0652dd;
+}
+
+/* Preloader */
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	/* change if the mask should have another color then white */
+	z-index: 999999;
+	/* makes sure it stays on top */
+}
+
+#status {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	/* centers the loading animation horizontally one the screen */
+	top: 50%;
+	/* centers the loading animation vertically one the screen */
+	background-image: url(../img/status.gif);
+	/* path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px;
+	/* is width and height divided by two */
+}
+.portfolio-img{
+	height: 200px;
+}
+.footer-links a{
+	color: #fff;
 }
