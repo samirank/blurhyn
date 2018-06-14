@@ -110,6 +110,11 @@ body{
 		margin-right: -15px;
 		width: 110%;
 	}
+	.footer-widget h4 {
+		color: #ccc;
+		margin-bottom: 10px;
+		margin-top: 30px;
+	}
 }
 .about h2{
 	text-transform: uppercase;
@@ -146,22 +151,22 @@ ul.slides p{
 	color: #fff !important;
 }
 #owl-demo .item img {
-    max-height: 122px;
+	max-height: 122px;
 }
 .logo-footer {
-    width: 150px;
+	width: 150px;
 }
 footer p {
-    color: #fff;
+	color: #fff;
 }
 .contact-widget ul.social-icons li a i {
 	color: #fff
 }
 .copyright-section {
-    border-top: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 }
 .owl-theme .owl-controls .owl-page span {
-    border: 1px solid #0652dd;
+	border: 1px solid #0652dd;
 }
 
 /* Preloader */
@@ -193,9 +198,35 @@ footer p {
 	margin: -100px 0 0 -100px;
 	/* is width and height divided by two */
 }
-.portfolio-img{
-	height: 200px;
+@media (min-width: 992px) {
+	.portfolio-img{
+		max-height: 200px;
+	}
+	.copyright-section {
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 992px) {
+	a.portfolio_item.work-grid {
+		width: 100%;
+	}
+	.col-md-4.logo.graphics {
+		min-width: 100%;
+	}
 }
 .footer-links a{
 	color: #fff;
+}
+.portfolio_item .portfolio_item_hover {
+	background-color: #0652DD;
+}
+.portfolio_item .portfolio_item_hover .item_info span {
+	color: #fff;
+}
+.portfolio_item .portfolio_item_hover .item_info em {
+	background-color: #fff;
+	color: #1b1464;
+}
+.twitter-widget a:hover {
+	color: #0652DD;
 }
