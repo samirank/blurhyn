@@ -1,18 +1,36 @@
 <?php
+ini_set("include_path", '/home/blurhync/php:' . ini_get("include_path") );
+require_once "Mail.php";
+
+
 $name       = @trim(stripslashes($_POST['name'])); 
 $from       = @trim(stripslashes($_POST['email'])); 
 $subject    = @trim(stripslashes($_POST['subject'])); 
 $message    = @trim(stripslashes($_POST['message'])); 
 $to   		= 'info@blurhyn.com';//This will be replaced with your email
 
-$headers   = array();
-$headers[] = "MIME-Version: 1.0";
-$headers[] = "Content-type: text/plain; charset=iso-8859-1";
-$headers[] = "From: {$name} <{$from}>";
-$headers[] = "Reply-To: <{$from}>";
-$headers[] = "Subject: {$subject}";
-$headers[] = "X-Mailer: PHP/".phpversion();
 
-mail($to, $subject, $message, $headers);
+
+$host = "ssl://mail.blurhyn.com";
+$port = "465";
+$username = "info@blurhyn.com";
+$password = "blurhyn2018!@#";
+$headers = array ('From' => $from,
+	'To' => $to,
+	'From' => $from,
+	'Subject' => "Client: ".$name);
+$smtp = Mail::factory('smtp',
+	array ('host' => $host,
+		'port' => $port,
+		'auth' => true,
+		'username' => $username,
+		'password' => $password));
+$mail = $smtp->send($to, $headers, $message);
+if (PEAR::isError($mail)) {
+	echo("<p>" . $mail->getMessage() . "</p>");
+} else {
+	header("location: message.html");
+}
 
 die;
+?>
